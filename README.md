@@ -26,7 +26,7 @@ This module depends on a correctly configured [GitHub Provider].
 ```hcl
 module "repo-protections" {
   source    = "github.com/wpengine/terraform-github-secure-repo?ref=0.1.0"
-  repo_name = "org/example-repo"
+  repo      = "org/example-repo"
 
   reviewers = [
     "fantasticdev1", # Joe Smith
@@ -51,7 +51,7 @@ If you want to require specific tests to pass before merging, you can specify re
 ```hcl
 module "repo-protections" {
   source    = "github.com/wpengine/terraform-github-secure-repo?ref=0.1.0"
-  repo_name = "org/example-repo"
+  repo      = "org/example-repo"
 
   reviewers = [
     "fantasticdev1", # Joe Smith
